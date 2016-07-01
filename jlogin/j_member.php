@@ -4,7 +4,7 @@ session_start();
 if(!isset($_SESSION["userName"])){
   $_SESSION["lastpage"]="member.php";
   echo 'test';
-  header("location:login.php");
+  header("location:j_login.php");
 }
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ if(!isset($_SESSION["userName"])){
     <div id="home" data-role="page">
   <div data-role="header" data-position="fixed">
     <h3>會員登入</h3>
-    <a href="index.php" data-icon="home" data-theme="">Home</a>
+    <a href="j_index.php" data-icon="home" data-theme="">Home</a>
     </div>
     <div align='center'><font color='red'>親愛的會員您好 歡迎來到會員專用頁!</font></div>
     

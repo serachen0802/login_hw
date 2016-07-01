@@ -2,12 +2,12 @@
 session_start();
 $user="guest";
 $login="登入";
-$con="login.php";
+$con="j_login.php";
 
  if($_SESSION["userName"]!=""){
    $user=$_SESSION["userName"];
    $login="登出";
-   $con="login.php?logout=1";
+   $con="j_login.php?logout=1";
  }
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ $con="login.php";
                     </span>
                     </a>
                     
-    <a href="member.php" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-inline="true" 
+    <a href="j_member.php" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-inline="true" 
     data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
         <span class="ui-btn-inner ui-btn-corner-all">
             <span class="ui-btn-text"><font><font>會員專用頁</font></font>

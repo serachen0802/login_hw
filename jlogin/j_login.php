@@ -2,13 +2,13 @@
 session_start();
 if($_GET["logout"]!=""){
   unset($_SESSION["userName"]);
-  header("location:index.php");
+  header("location:j_index.php");
 } 
 
 if(isset($_POST["btnOK"])){
   if($_POST["txtUserName"]!=""){
     $_SESSION["userName"]=$_POST["txtUserName"];
-    header("location:index.php");
+    header("location:j_index.php");
   }else {
     $aler='<font color="red">請輸入帳號!!!</font>';
    }
@@ -32,10 +32,10 @@ if(isset($_POST["btnOK"])){
 <div id="home" data-role="page">
   <div data-role="header" data-position="fixed">
     <h3>會員登入</h3>
-    <a href="index.php" data-icon="home" data-theme="">Home</a>
+    <a href="j_index.php" data-icon="home" data-theme="">Home</a>
 
 </div>
-		<form method="post" action="login.php">
+		<form method="post" action="j_login.php">
 		
 <div role="main" class="ui-content">
   <div class="ui-field-contain">
